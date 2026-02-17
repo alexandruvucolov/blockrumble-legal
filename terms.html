@@ -3,18 +3,124 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BlockRumble Terms and Conditions</title>
+  <title>Block Rumble! Terms and Conditions</title>
   <style>
-    body{font-family:Arial,sans-serif;max-width:980px;margin:40px auto;padding:0 16px;line-height:1.7;background:#0e1220;color:#e9f1ff}
-    h1,h2{color:#ffd28a}
-    a{color:#7fe3ff}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.8;
+      background: linear-gradient(135deg, #0a0e1a 0%, #1a1f3a 100%);
+      color: #e8f0ff;
+      min-height: 100vh;
+    }
+    .container {
+      background: rgba(23, 29, 51, 0.85);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 210, 138, 0.15);
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      color: #ffd28a;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      text-shadow: 0 0 20px rgba(255, 210, 138, 0.5);
+      font-weight: 700;
+    }
+    h2 {
+      color: #ffbe5e;
+      font-size: 1.6em;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba(255, 190, 94, 0.3);
+      font-weight: 600;
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 1.05em;
+    }
+    strong {
+      color: #ffe4b8;
+      font-weight: 600;
+    }
+    ul {
+      margin: 15px 0 20px 25px;
+      list-style-type: none;
+    }
+    ul li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 10px;
+      font-size: 1.05em;
+    }
+    ul li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #ffbe5e;
+      font-weight: bold;
+    }
+    a {
+      color: #5ddbff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(93, 219, 255, 0.3);
+      transition: all 0.3s ease;
+      padding-bottom: 2px;
+    }
+    a:hover {
+      color: #9de8ff;
+      border-bottom-color: #9de8ff;
+      text-shadow: 0 0 8px rgba(157, 232, 255, 0.6);
+    }
+    .last-updated {
+      color: #a8c5d8;
+      font-style: italic;
+      margin-bottom: 30px;
+      font-size: 0.95em;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #6e4a2d 0%, #4a2d1a 100%);
+      border-radius: 8px;
+      border: 1px solid rgba(255, 190, 94, 0.3);
+      transition: all 0.3s ease;
+    }
+    .back-link:hover {
+      background: linear-gradient(135deg, #8a5f3a 0%, #634023 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(255, 190, 94, 0.3);
+      border-bottom: 1px solid rgba(255, 190, 94, 0.3);
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Terms and Conditions for BlockRumble</h1>
-  <p><strong>Last updated:</strong> February 17, 2026</p>
+  <div class="container">
+    <h1>Terms and Conditions for Block Rumble!</h1>
+    <p class="last-updated"><strong>Last updated:</strong> February 17, 2026</p>
 
-  <p>These Terms and Conditions ("Terms") govern your use of the BlockRumble game application ("Game"). By installing or using the Game, you agree to these Terms.</p>
+    <p>These Terms and Conditions ("Terms") govern your use of the Block Rumble! game application ("Game"). By installing or using the Game, you agree to these Terms.</p>
 
   <h2>1. License</h2>
   <p>We grant you a personal, non-exclusive, non-transferable, revocable license to use the Game for personal entertainment purposes.</p>
@@ -48,8 +154,9 @@
   <p>These Terms are governed by applicable local laws in your operating region, unless otherwise required by law.</p>
 
   <h2>10. Contact</h2>
-  <p>For legal questions, contact: <em>alexandruvucolov@gmail.com</em> (replace if needed).</p>
+  <p>For legal questions, contact: <a href="mailto:alexandruvucolov@gmail.com">alexandruvucolov@gmail.com</a></p>
 
-  <p><a href="index.html">Back to Legal Home</a></p>
+    <a href="index.html" class="back-link">← Back to Legal Home</a>
+  </div>
 </body>
 </html>

@@ -3,24 +3,147 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BlockRumble Legal</title>
+  <title>Block Rumble! Legal</title>
   <style>
-    body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6;background:#0e1220;color:#e9f1ff}
-    a{color:#7fe3ff}
-    .card{background:#171d33;border:1px solid #2d3a63;border-radius:12px;padding:20px;margin:14px 0}
-    h1,h2{margin-top:0}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.8;
+      background: linear-gradient(135deg, #0a0e1a 0%, #1a1f3a 100%);
+      color: #e8f0ff;
+      min-height: 100vh;
+    }
+    .container {
+      background: rgba(23, 29, 51, 0.85);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(157, 232, 255, 0.15);
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      color: #9de8ff;
+      font-size: 2.8em;
+      margin-bottom: 15px;
+      text-align: center;
+      text-shadow: 0 0 25px rgba(157, 232, 255, 0.6);
+      font-weight: 700;
+    }
+    .subtitle {
+      text-align: center;
+      color: #a8c5d8;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: linear-gradient(135deg, rgba(45, 58, 99, 0.5) 0%, rgba(30, 40, 70, 0.5) 100%);
+      border: 1px solid rgba(127, 227, 255, 0.2);
+      border-radius: 16px;
+      padding: 30px;
+      margin: 25px 0;
+      transition: all 0.4s ease;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(127, 227, 255, 0.3);
+      border-color: rgba(127, 227, 255, 0.4);
+    }
+    .card h2 {
+      color: #7fe3ff;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    .card p {
+      font-size: 1.05em;
+      margin-bottom: 18px;
+      color: #c8dcf0;
+    }
+    .card a {
+      display: inline-block;
+      color: #5ddbff;
+      text-decoration: none;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, #2d4a6e 0%, #1a2d4a 100%);
+      border-radius: 8px;
+      border: 1px solid rgba(93, 219, 255, 0.3);
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 1.05em;
+    }
+    .card a:hover {
+      background: linear-gradient(135deg, #3a5f8a 0%, #234063 100%);
+      color: #9de8ff;
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(93, 219, 255, 0.4);
+      text-shadow: 0 0 10px rgba(157, 232, 255, 0.6);
+    }
+    .card.privacy {
+      border-color: rgba(157, 232, 255, 0.2);
+    }
+    .card.privacy:hover {
+      border-color: rgba(157, 232, 255, 0.5);
+      box-shadow: 0 8px 25px rgba(157, 232, 255, 0.3);
+    }
+    .card.terms {
+      border-color: rgba(255, 210, 138, 0.2);
+    }
+    .card.terms:hover {
+      border-color: rgba(255, 210, 138, 0.5);
+      box-shadow: 0 8px 25px rgba(255, 210, 138, 0.3);
+    }
+    .card.terms h2 {
+      color: #ffd28a;
+    }
+    .footer {
+      text-align: center;
+      color: #7a8fa5;
+      font-size: 0.9em;
+      margin-top: 40px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(127, 227, 255, 0.1);
+    }
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px;
+      }
+      h1 {
+        font-size: 2.2em;
+      }
+      .card {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>BlockRumble – Legal</h1>
-  <div class="card">
-    <h2>Privacy Policy</h2>
-    <p><a href="privacy.html">Open Privacy Policy</a></p>
+  <div class="container">
+    <h1>Block Rumble!</h1>
+    <p class="subtitle">Legal Information & Policies</p>
+    
+    <div class="card privacy">
+      <h2>Privacy Policy</h2>
+      <p>Learn how Block Rumble! handles your data and protects your privacy.</p>
+      <a href="privacy.html">Read Privacy Policy →</a>
+    </div>
+    
+    <div class="card terms">
+      <h2>Terms and Conditions</h2>
+      <p>Review the terms governing your use of Block Rumble!</p>
+      <a href="terms.html">Read Terms & Conditions →</a>
+    </div>
+    
+    <div class="footer">
+      <p>Last updated: February 17, 2026</p>
+    </div>
   </div>
-  <div class="card">
-    <h2>Terms and Conditions</h2>
-    <p><a href="terms.html">Open Terms and Conditions</a></p>
-  </div>
-  <p>Last updated: February 17, 2026</p>
 </body>
 </html>
